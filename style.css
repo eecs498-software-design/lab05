@@ -1,0 +1,25 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 6px 10px;
+  margin-right: 4px;
+}
+
+.highlight {
+  background-color: #fffae5;
+}
+
+.positive {
+  color: green;
+}
+
+.zero {
+  color: gray;
+}

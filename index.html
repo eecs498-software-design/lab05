@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML + DOM Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>HTML and the DOM</h1>
+
+    <!-- SEGMENT 1: HTML vs DOM -->
+    <section>
+      <h2>HTML Basics</h2>
+
+      <p id="intro">This text is written directly in HTML.</p>
+
+      <button onclick="alert('Inline click handler fired')">
+        Inline Click
+      </button>
+
+      <br /><br />
+
+      <img
+        id="demo-image"
+        src="https://via.placeholder.com/150"
+        alt="A placeholder image"
+      />
+
+      <br /><br />
+
+      <a id="demo-link" href="https://example.com"> Example link </a>
+    </section>
+
+    <!-- SEGMENT 1: Forms & Inputs -->
+    <section>
+      <h2>Inputs</h2>
+
+      <label>
+        Text input:
+        <input id="text-input" type="text" value="hello" />
+      </label>
+
+      <br /><br />
+
+      <label>
+        Checkbox:
+        <input id="check-input" type="checkbox" />
+      </label>
+    </section>
+
+    <!-- SEGMENT 2: Dynamic Content -->
+    <section>
+      <h2>Dynamic Content</h2>
+
+      <p id="counter-display">Count: 0</p>
+
+      <button id="inc-btn">Increment</button>
+      <button id="reset-btn">Reset</button>
+
+      <div id="messages"></div>
+    </section>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

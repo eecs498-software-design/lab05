@@ -2,255 +2,147 @@
 
 This lab is split into two parts:
 
-- **Hour 1 (60 min): HTML (40 min) + CSS (20 min)**
-- **Hour 2 (60 min): Vue.js fundamentals**
+- **Part 1:** HTML, CSS, and the DOM (6 small exercises in this folder)
+- **Part 2:** Vue.js fundamentals (using the official Vue tutorial)
 
-You’ll alternate between short explanations from the instructor, hands-on exercises,
-working with classmates, and brief whole-class discussions.
-
-If you fall behind during lab, this README is designed so you can rejoin at any point.
+You’ll alternate between short explanations from the instructor and hands‑on exercises.
 
 ---
 
-# 🕐 Hour 1 — HTML & CSS
+## 🔧 Setup: Open the project with Live Server
 
-Navigate to the HTML/CSS folder:
+1. Open this folder (`lab05`) in VS Code.
+2. Install the **Live Server** extension (by _Ritwick Dey_):
+   - In VS Code, go to the **Extensions** panel.
+   - Search for **“Live Server”**.
+   - Install the extension.
+3. In the Explorer, right‑click `index.html` and choose **“Open with Live Server”**.
+4. Your browser should open to a local URL (e.g. `http://127.0.0.1:5500/...`).
 
-```bash
-cd hour1-html-css
-```
+You’ll work only with three files in this part:
 
-Open `index.html` in your browser (double-click it or use VS Code Live Server).
+- `index.html`
+- `style.css`
+- `src/main.js`
 
----
-
-## 🧱 Exercise 1 — Basic HTML Structure (HTML · ~10 min)
-
-**Goal:** Practice writing clean, readable HTML using headings, paragraphs, and sections.
-
-### Steps
-
-1. Open `index.html`.
-2. Inside `<main>`:
-   - Add an `<h1>` at the top of the page (this is the page title).
-   - Add a `<p>` directly below it introducing what the page is about.
-3. Inside each `<section>`:
-   - Add an `<h2>` as the section title.
-   - Add at least one `<p>` of descriptive text.
-
-### Checklist
-
-- [ ] Exactly one `<h1>`
-- [ ] Sections use `<h2>` (not `<p>` or `<div>`)
-- [ ] Text content is inside `<p>` elements
-
-👥 Compare your structure with a neighbor when finished.
+Keep them open side‑by‑side as you work.
 
 ---
 
-## 🧱 Exercise 2 — Semantic HTML (HTML · ~10 min)
+## Exercise 1 — Describe Yourself & Movies (HTML)
 
-**Goal:** Use semantic tags so the page describes *what it is*, not just how it looks.
+**Goal:** Practice writing basic content in HTML.
 
-### Steps
+- In `index.html`, find **“Exercise 1”**.
+- Under the Exercise 1 comment:
+  - Add a **paragraph** that briefly describes yourself.
+  - Add an **ordered list** (`<ol>`) of your **3 favorite movies**, each in its own `<li>`.
 
-1. Wrap the top of the page in `<header>`.
-2. Inside `<header>`:
-   - Add a `<nav>` element.
-   - Inside `<nav>`, create a list using `<ul>` and `<li>`.
-   - Add at least **two navigation links** using `<a>`.
-3. Ensure all main content is inside `<main>`.
-4. Ensure the bottom of the page is wrapped in `<footer>`.
+**Checklist**
 
-### Checklist
-
-- [ ] `<header>` contains navigation
-- [ ] `<nav>` contains a list of links
-- [ ] `<main>` contains the main content
-- [ ] `<footer>` is outside `<main>`
-
-💬 Class check-in: What became clearer once you added semantic tags?
+- [ ] A paragraph about you
+- [ ] An ordered list with 3 movies
 
 ---
 
-## 🧱 Exercise 3 — Realistic HTML Content (HTML · ~20 min)
+## Exercise 2 — Image & Link (HTML)
 
-**Goal:** Make the page feel like a small but realistic website.
+**Goal:** Practice HTML attributes using images and links.
 
-### Steps
+- In `index.html`, find **“Exercise 2”**.
+- Under the Exercise 2 comment:
+  - Add an **image of yourself** (or any picture that represents you) using `<img>`.
+    - Include meaningful `alt` text.
+  - Add a **link** (`<a>`) to your favorite YouTube video.
 
-1. Inside one section:
-   - Add an **unordered list** (`<ul>` / `<li>`) with at least 3 items.
-2. Inside another section:
-   - Add an **ordered list** (`<ol>` / `<li>`).
-3. Add an image:
-   - Use `<img>`.
-   - Include meaningful `alt` text that describes the image.
-4. Add emphasis where appropriate:
-   - Use `<strong>` for importance.
-   - Use `<em>` for emphasis (not styling).
-5. Review your HTML:
-   - Avoid unnecessary `<div>` usage.
-   - Ensure the page still makes sense without CSS.
+**Checklist**
 
-### Checklist
-
-- [ ] One `<ul>` and one `<ol>`
-- [ ] `<img>` includes meaningful `alt`
-- [ ] `<strong>` and `<em>` used correctly
-- [ ] HTML reads like a document
-
-👥 Work in groups of 3 and discuss which tags felt natural vs awkward.
+- [ ] `<img>` with a real (or placeholder) URL
+- [ ] `alt` text describes the image
+- [ ] `<a>` link opens a YouTube video
 
 ---
 
-# 🎨 CSS Section (Hour 1 · ~20 minutes)
+## Exercise 3 — A Button That Logs to the Console (HTML + Dev Tools)
 
-Now we’ll style the page **without changing the HTML structure**.
+**Goal:** See how buttons can have event listeners using HTML.
 
-Open `style.css`.
+- In `index.html`, find **“Exercise 3”**.
+- Under the Exercise 3 comment:
+  - Add a `<button>` that says something like **“Log Message”**.
+  - When clicked, it should log `"Button clicked"` to the browser console.
 
----
+You can do this with an inline `onclick="console.log('Button clicked')"` attribute
 
-## 🎨 Exercise 4 — CSS Styling (CSS · ~10 min)
+**Checklist**
 
-**Goal:** Improve readability and appearance using basic CSS.
-
-### Steps
-
-1. Center the main content:
-   - Set a maximum width.
-   - Center it horizontally.
-2. Add spacing:
-   - Use `margin` and `padding` to separate sections.
-3. Style the navigation:
-   - Remove default list styling.
-   - Space out links.
-4. Style buttons:
-   - Add background color.
-   - Add padding.
-   - Round corners.
-
-### Rules
-
-- ❌ No inline styles
-- ❌ Do not modify HTML
-- ✅ Use class selectors
-
-### Checklist
-
-- [ ] Page content centered
-- [ ] Sections spaced apart
-- [ ] Nav links readable
-- [ ] Buttons clearly styled
+- [ ] A visible button under Exercise 3
+- [ ] Clicking it prints `"Button clicked"` in the dev tools console
 
 ---
 
-## 🎨 Exercise 5 — Flexbox Layout (CSS · ~10 min)
+## Exercise 4 — Toggle the Page Title (DOM + Events)
 
-**Goal:** Use Flexbox to control layout intentionally.
+**Goal:** Use JavaScript to change text in the DOM based on events.
 
-### Steps
+Add a button that toggles the title text between `"HTML and the DOM"` and `"Lab 05: HTML and the DOM"`
 
-1. Locate the `.card` class in `style.css`.
-2. Add:
-   - `display: flex`
-   - `flex-direction: column`
-   - `gap` for spacing
-3. Experiment:
-   - Change the gap value.
-   - Try adding `align-items`.
+1. In `index.html`, under **Exercise 4**, add a button such as **“Toggle Title”**.
+2. In `src/main.js`, find the comment for **Exercise 4**.
+3. Add JavaScript that:
+   - Selects the title element with `id="page-title"`.
+   - Listens for clicks on your new button.
+   - Toggles the text between:
+     - `"HTML and the DOM"` and
+     - `"Lab 05: HTML and the DOM"`.
 
-### Checklist
+**Checklist**
 
-- [ ] `.card` uses Flexbox
-- [ ] Content stacks vertically
-- [ ] Spacing controlled with `gap`
-
-💬 Class discussion: What did Flexbox make easier?
+- [ ] New button appears under Exercise 4
+- [ ] Clicking it swaps the page title back and forth
 
 ---
 
-# 🧩 Hour 2 — Vue.js
+## Exercise 5 — CSS Selectors (Tags, IDs, Classes)
 
-Navigate to the Vue project:
+**Goal:** Practice styling using different kinds of selectors.
 
-```bash
-cd ../hour2-vue
-npm install
-npm run dev
-```
+Open `style.css` and read the **Exercise 5** comment at the top. Implement the TODOs:
 
-Open the local URL printed in the terminal.
+- **Tag selector:** Style **all `<h2>` headings** to have an underline.
+- **ID selector:** Style the intro text (`"This text is written directly in HTML."`) so the text is blue.
+- **Class selector:** Style the **counter buttons** (they use the class `counter-button`) so they have a red border.
 
----
+**Checklist**
 
-## ⚙️ Exercise 6 — Read a Vue Component (Vue · ~8 min)
-
-**Goal:** Connect Vue concepts back to HTML and JavaScript.
-
-### Steps
-
-1. Open `src/App.vue`.
-2. Identify:
-   - The HTML template.
-   - Reactive state (`ref`).
-   - Event handlers (`@click`).
-3. Compare the template structure to your HTML from Hour 1.
-
-💬 Discuss: Where is the DOM created and updated?
+- [ ] All `<h2>` elements look underlined
+- [ ] Intro text is blue
+- [ ] Counter buttons are visibly styled with a red border
 
 ---
 
-## ⚙️ Exercise 7 — Counter State (Vue · ~12 min)
+## Exercise 6 — Change Color When Count Is High (DOM + CSS)
 
-**Goal:** Add reactive state and events.
+**Goal:** React to changing state in JavaScript by updating styles.
 
-### Steps
+Files involved: `style.css` and `src/main.js`.
 
-1. In `<script setup>`:
-   - Ensure a `count` reactive variable exists.
-2. In `<template>`:
-   - Display the current count.
-   - Add a button that increments the count.
-3. Click the button and confirm the UI updates automatically.
+1. In `style.css`, read the **Exercise 6** comment.
+2. In `src/main.js`, find the **Exercise 6** comment near the `render()` function.
+3. Update `render()` so that when `count >= 10`, the counter display text becomes **red**.
 
-### Rules
+**Checklist**
 
-- ❌ No `document.querySelector`
-- ❌ No manual DOM manipulation
+- [ ] Counter still increments and resets correctly
+- [ ] When `count >= 10`, the count text turns red
+- [ ] When you reset, the color goes back to normal
 
 ---
 
-## ⚙️ Exercise 8 — Conditional Rendering (Vue · ~12 min)
+## Part 2 — Vue.js Fundamentals (Official Tutorial)
 
-**Goal:** Control the UI based on state.
+For the Vue portion of the lab, you’ll work through **the official Vue tutorial** instead of custom steps here.
 
-### Steps
+   - [Vue.js Tutorial – Step 1](https://vuejs.org/tutorial/#step-1)
 
-1. Add a **Reset** button:
-   - Only visible when `count > 0`.
-2. Add a message:
-   - Only visible when `count >= 10`.
-3. Test:
-   - Increment past 10.
-   - Reset at different values.
-
-👥 Work in groups of 3 and help each other reason about conditions.
-
----
-
-# 🧠 Final Discussion (5–7 min)
-
-- How much HTML carried over into Vue?
-- What did Vue simplify?
-- What still matters even when using a framework?
-
----
-
-## ✅ Key Takeaways
-
-- HTML defines structure.
-- CSS defines appearance.
-- Vue manages dynamic behavior.
-- You update **state**, not the DOM.
+Focus on connecting what you see in Vue (templates, reactivity, events) back to what you just did with plain HTML, CSS, and DOM code.

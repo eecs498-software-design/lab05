@@ -1,3 +1,10 @@
+/* Exercise 5:
+    * TODO:
+        * Style all heading 2 tags using a tag selectors to add an underline
+        * Style the intro text using an ID selector to make the color blue
+        * Style the counter buttons using a class selector to add a red border
+ */
+
 body {
   font-family: system-ui, sans-serif;
   padding: 20px;
@@ -23,3 +30,7 @@ button {
 .zero {
   color: gray;
 }
+
+/* Exercise 6:
+    * TODO: Make the counter display color change to red when count >= 10
+ */

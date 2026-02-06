@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>HTML and the DOM</h1>
+    <h1 id="page-title" style="text-decoration: underline">HTML and the DOM</h1>
 
     <!-- SEGMENT 1: HTML vs DOM -->
     <section>
@@ -29,12 +29,20 @@
       <br /><br />
 
       <a id="demo-link" href="https://google.com"> Example link to Google </a>
+
+      <h2>Exercise 1:</h2>
+      <!-- TODO: Add a paragraph description of yourself and an ordered list of your 3 favorite movies -->
+
+      <h2>Exercise 2:</h2>
+      <!-- TODO: Add an image of yourself and a link to your favorite Youtube video -->
+
+      <h2>Exercise 3:</h2>
+      <!-- TODO: Add a button that logs to console "Button clicked" when clicked -->
     </section>
 
-    <!-- SEGMENT 1: Forms & Inputs -->
+    <!-- SEGMENT 2: Dynamic Content -->
     <section>
-      <h2>Inputs</h2>
-
+      <h2>Dynamic Content</h2>
       <label>
         Text input:
         <input id="text-input" type="text" value="hello" />
@@ -42,20 +50,13 @@
 
       <br /><br />
 
-      <label>
-        Checkbox:
-        <input id="check-input" type="checkbox" />
-      </label>
-    </section>
+      <h2>Exercise 4:</h2>
+      <!-- TODO: Add a button that toggles the page title between "HTML and the DOM" and "Lab 05: HTML and the DOM" -->
 
-    <!-- SEGMENT 2: Dynamic Content -->
-    <section>
-      <h2>Dynamic Content</h2>
+      <p id="counter-display">No Count</p>
 
-      <p id="counter-display">Count: 0</p>
-
-      <button id="inc-btn">Increment</button>
-      <button id="reset-btn">Reset</button>
+      <button id="inc-btn" class="counter-button">Increment</button>
+      <button id="reset-btn" class="counter-button">Reset</button>
 
       <div id="messages"></div>
     </section>

@@ -1,10 +1,10 @@
 // SEGMENT 2: Accessing DOM elements
 
-const counterDisplay = document.getElementById("counter-display")!;
-const incBtn = document.getElementById("inc-btn")!;
-const resetBtn = document.getElementById("reset-btn")!;
-const textInput = document.getElementById("text-input") as HTMLInputElement;
-const messages = document.getElementById("messages")!;
+const counterDisplay = document.getElementById("counter-display");
+const incBtn = document.getElementById("inc-btn");
+const resetBtn = document.getElementById("reset-btn");
+const textInput = document.getElementById("text-input");
+const messages = document.getElementById("messages");
 
 let count = 0;
 

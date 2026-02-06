@@ -9,7 +9,7 @@ You’ll alternate between short explanations from the instructor and hands‑on
 
 ---
 
-## 🔧 Setup: Open the project with Live Server
+## Setup: Open the project with Live Server
 
 1. Open this folder (`lab05`) in VS Code.
 2. Install the **Live Server** extension (by _Ritwick Dey_):
@@ -143,6 +143,6 @@ Files involved: `style.css` and `src/main.js`.
 
 For the Vue portion of the lab, you’ll work through **the official Vue tutorial** instead of custom steps here.
 
-   - [Vue.js Tutorial – Step 1](https://vuejs.org/tutorial/#step-1)
+- [Vue.js Tutorial – Step 1](https://vuejs.org/tutorial/#step-1)
 
 Focus on connecting what you see in Vue (templates, reactivity, events) back to what you just did with plain HTML, CSS, and DOM code.
